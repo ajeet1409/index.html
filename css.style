@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+   min-height: 100vh;
+}
+#main{
+    width: 100%;
+    min-height: 100%;   
+}
+
+#top{
+    width: 100%;
+    min-height: 60vh;
+   background-image: url(https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZvcmVzdHxlbnwwfHwwfHx8MA%3D%3D);
+   /* background-repeat: no-repeat; */
+   background-position: 50% 30%;
+   background-size: cover;
+  
+}
+#overlay{
+    color: #fff;
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.23);
+}
+/* for noise text */
+#text{
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+padding: 0 6vw;
+    bottom: 20%;
+   
+   
+}
+#textright{
+
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+#textright p{
+    font-size: 12px;
+    width: 40%;
+}
+/* for icon color */
+#icon i{
+    color: #fff;
+}
+
+/*  */
+#text h1{
+    font-weight: 500;
+    font-size: 6vw;
+}
+
+/* bottom div */
+
+#bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+    background-color: aquamarine;
+}
+/* bottom first div */
+
+#bone{
+    width: 23%;
+    min-height: inherit;
+    background-color: #fff;
+    padding: 30px 60px;
+}
+
+#oneparagraph{
+    margin-top:20px ;
+    font-size: 12px;
+    width: 80px;
+}
+
+/* bottom second div */
+#btwo{
+    width: 27%;
+    min-height: inherit;
+    background-image: url(https://images.unsplash.com/photo-1611316185995-9624c94487d1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1hbiUyMGJhY2slMjBzaWRlJTIwamFja2V0fGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position:30% 60% ;
+}
+
+/* bottom third div */
+#bthree{
+    width: 20%;
+    min-height: inherit;
+    background-color: rgb(255, 196, 196);
+    
+}
+#bthreetop{
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgb(255, 102, 0);
+    padding: 30px 40px;
+    color: #fff;
+}
+#paragraph{
+    margin-top: 20px;
+    font-size:12px ;
+    
+}
+#bthreebottom{
+    width: 100%;
+    min-height: 20vh;
+   background-image: url(https://images.unsplash.com/photo-1560790671-b76ca4de55ef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zmxvd2VyfGVufDB8fDB8fHww);
+   background-position: center;
+   background-size:  cover;
+}
+
+
+/* bottom fourth div */
+#bfour{
+    width: 30%;
+    min-height: inherit;
+   background-color: #444;
+    color: #fff;
+    padding: 30px;
+}
+.notf{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+ #photo{
+    width: 41px;
+    height: 41px;
+    background-image: url(https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8fHww);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+
+
+}
+ #photo1{
+    width: 41px;
+    height: 41px;
+    background-image: url(https://plus.unsplash.com/premium_photo-1664533227571-cb18551cac82?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1hbnxlbnwwfHwwfHx8MA%3D%3D);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+
+
+}
+#line{
+    
+    font-size: 12px;
+    width: 86%;
+}
+@media(max-width:500px){
+
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #text h1{
+        font-size: 10vh;
+    }
+
+    #overlay #text #textright{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #overlay #text #textright p{
+       width: initial;
+       margin-top: 20px;
+    }
+    #overlay #text #textright #icon{
+       margin-top: 30px;
+
+    }
+    #bottom{
+        min-height: 20vh;
+        flex-direction: column;}
+    #bone{width: 100%;}
+    #btwo{width: 100%;
+    min-height: 30vh;}
+    #bthree{width: 100%;}
+    #bfour{width: 100%;}
+    #bthreebottom{min-height: 30vh;}
+    
+
+}
